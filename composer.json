@@ -1,5 +1,6 @@
 {
-  "name": "biffbangpow/silverstripe-webp-detection",
+  "name": "joelgrondrup/silverstripe-webp-detection",
+  "version": "1.0.0",
   "description": "Simple detection of browser webp capabilities",
   "type": "silverstripe-vendormodule",
   "minimum-stability": "dev",
@@ -16,7 +17,7 @@
   ],
   "require": {
     "silverstripe/cms": "^5",
-    "tractorcow/silverstripe-image-formatter": "^1.0"
+    "tractorcow/silverstripe-image-formatter": "2.0.1"
   },
   "autoload": {
     "psr-4": {
