@@ -11,13 +11,10 @@ class WebPExtension extends Extension
     /**
      * @return bool
      */
-    public function getWebPSupport()
+    public function getWebPSupport(): bool
     {
         $request = Controller::curr()->getRequest()->getHeader('accept');
-        if (stristr($request, 'image/webp') !== false) {
-            return true;
-        }
-        return false;
+        return is_string($request) && stripos($request, 'image/webp') !== false;
     }
 
 }
